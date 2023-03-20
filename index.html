@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+    <style>
+      /* Estilos gerais */
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      
+      /* Formulário */
+      form {
+        max-width: 600px;
+        margin: 1rem auto;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="submit"] {
+        padding: 0.5rem;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #0069d9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cadastro de Usuários</h1>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      
+      <input type="submit" value="Cadastrar">
+    </form>
+  </body>
+</html>
+<footer>
+  <p>&copy; 2023 Projeto de bloco. Todos os direitos reservados.</p>
+  <nav>
+    <ul>
+      <li><a href="#">Termos de uso</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+</footer>
+<img src="logo.png" alt="INFNET">
+
